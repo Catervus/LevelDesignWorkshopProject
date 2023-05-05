@@ -134,6 +134,8 @@ namespace ECM.Controllers
         
         private bool _restoreVelocityOnResume = true;
 
+        private bool allowInput = true;
+
         #endregion
 
         #region PROPERTIES
@@ -507,12 +509,17 @@ namespace ECM.Controllers
 
         #region METHODS
 
+        public void ToggleInputAllow(bool _allow)
+        {
+            allowInput = false;
+        }
+
         /// <summary>
         /// Pause Rigidbody physical interaction, will restore current velocities (linear, angular) if desired (restoreVelocityOnResume == true).
         /// While paused, will turn the Rigidbody into kinematic, preventing any physical interaction.
         /// </summary>
 
-        private void Pause()
+        public void Pause()
         {
             if (pause && !isPaused)
             {
@@ -935,8 +942,8 @@ namespace ECM.Controllers
         public virtual void Update()
         {
             // Handle input
-
-            HandleInput();
+            if(allowInput)
+                HandleInput();
 
             // If paused, return
 

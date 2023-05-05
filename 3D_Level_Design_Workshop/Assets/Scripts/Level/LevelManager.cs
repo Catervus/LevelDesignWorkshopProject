@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
     private static LevelManager instance;
     public static LevelManager Instance { get => instance; }
 
+
     private void Awake()
     {
 
@@ -75,7 +76,7 @@ public class LevelManager : MonoBehaviour
 
 
     private void LoadNextLevel()
-    {
 
+    {
     }
 }

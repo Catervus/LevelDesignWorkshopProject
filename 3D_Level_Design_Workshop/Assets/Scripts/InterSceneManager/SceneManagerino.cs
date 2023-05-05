@@ -13,7 +13,7 @@ public class SceneManagerino : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            // DontDestroyOnLoad(this.gameObject);
         }
         else
         {
@@ -41,12 +41,26 @@ public class SceneManagerino : MonoBehaviour
     }
     public void LoadNextScene()
     {
+        int nextsceneindex = GetActiveSceneIndex() + 1;
+        if (nextsceneindex >= SceneManager.sceneCountInBuildSettings)
+        {
+            Debug.LogWarning("There is no next scene to load.");
+            return;
+        }
         SceneManager.LoadScene(GetActiveSceneIndex() + 1);
     }
 
     public int GetActiveSceneIndex()
     {
         return SceneManager.GetActiveScene().buildIndex;
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+         UnityEditor.EditorApplication.isPlaying = false;
+#endif 
+        Application.Quit();
     }
 
 }
