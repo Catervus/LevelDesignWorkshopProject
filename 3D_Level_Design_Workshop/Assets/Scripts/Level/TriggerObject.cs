@@ -6,6 +6,7 @@ public enum E_TriggerObjectType
 {
     Coin = 0,
     Goal,
+    Obstacle
 }
 
 public class TriggerObject : MonoBehaviour
@@ -19,6 +20,9 @@ public class TriggerObject : MonoBehaviour
     [SerializeField]
     E_TriggerObjectType triggerObjType;
 
+    [SerializeField]
+    ScriptableInt playerCollisionLayer;
+
     public E_TriggerObjectType GetTriggerObjType { get => triggerObjType; }
 
     private void Start()
@@ -29,9 +33,28 @@ public class TriggerObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider _other)
     {
+        if (_other.gameObject.layer != playerCollisionLayer.DefaultValue)
+            return;
+
         triggerEvent.RaiseEvent();
         if (setInactiveWhenTrigger)
             gameObject.SetActive(false);
 
+    }
+
+    private void OnCollisionEnter(Collision _other)
+    {
+        if (_other.gameObject.layer != playerCollisionLayer.DefaultValue)
+            return;
+
+        if (this.enabled == false)
+        {
+            Debug.Log("Huhu!");
+            return;
+        }
+
+        triggerEvent.RaiseEvent();
+        if (setInactiveWhenTrigger)
+            gameObject.SetActive(false);
     }
 }

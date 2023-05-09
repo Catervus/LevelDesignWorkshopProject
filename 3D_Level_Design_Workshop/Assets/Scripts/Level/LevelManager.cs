@@ -42,8 +42,9 @@ public class LevelManager : MonoBehaviour
         {
             if (!coinList.Contains(_to))
                 coinList.Add(_to);
+            UpdateUICoinScore();
         }
-        UpdateUICoinScore();
+        
     }
 
 

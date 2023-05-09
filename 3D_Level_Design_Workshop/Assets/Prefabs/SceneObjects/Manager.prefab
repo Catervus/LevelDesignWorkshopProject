@@ -198,3 +198,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8367247874321864515}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2902538512416236453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6654504930389079270, guid: 3a5dc31f20fdd2d4daba54bc9aa0a1f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8367247874321864515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1070570024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2902538512416236453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf8c754ce85d944684920b1fda56184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: {fileID: 11400000, guid: 3f96b3f35a9380243a6bca9f80e8ec3b, type: 2}
+  eventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2

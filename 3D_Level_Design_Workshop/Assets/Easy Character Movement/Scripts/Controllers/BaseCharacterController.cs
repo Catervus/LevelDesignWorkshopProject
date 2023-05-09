@@ -858,6 +858,10 @@ namespace ECM.Controllers
                 z = Input.GetAxisRaw("Vertical")
             };
 
+            float angle = Camera.main.transform.rotation.eulerAngles.y;
+            Debug.Log(angle);
+            moveDirection = Quaternion.AngleAxis(angle, Vector3.up) * moveDirection;
+
             jump = Input.GetButton("Jump");
 
             crouch = Input.GetKey(KeyCode.C);
