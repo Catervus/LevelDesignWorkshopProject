@@ -56,6 +56,12 @@ public class LevelManager : MonoBehaviour
         
     }
 
+    public void ResetLevel()
+    {
+        playerSpawnPos = Vector3.zero;
+        checkPointHit = false;
+    }
+
     public void LevelDone()
     {
         Debug.Log("Level Done!");

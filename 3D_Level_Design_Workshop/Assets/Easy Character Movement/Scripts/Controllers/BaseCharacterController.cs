@@ -113,6 +113,9 @@ namespace ECM.Controllers
         [SerializeField]
         private bool _rootMotionRotation;
 
+        [SerializeField]
+        private ScriptableFloat bouncyMultiplier;
+
         #endregion
 
         #region FIELDS
@@ -628,6 +631,15 @@ namespace ECM.Controllers
 
             // 'Pause' grounding, allowing character to safely leave the 'ground'
 
+            movement.DisableGrounding();
+        }
+
+        public void BouncyJump()
+        {
+            // Apply bouncy jump impulse
+            movement.ApplyVerticalImpulse(jumpImpulse * bouncyMultiplier.RuntimeValue);
+
+            // 'Pause' grounding, allowing character to safely leave the 'ground'
             movement.DisableGrounding();
         }
 

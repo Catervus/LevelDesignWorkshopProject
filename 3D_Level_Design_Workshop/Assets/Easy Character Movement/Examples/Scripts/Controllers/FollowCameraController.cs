@@ -15,6 +15,8 @@ namespace ECM.Examples
         [SerializeField]
         private float _followSpeed = 3.0f;
 
+        private float currentFollowSpeed;
+
         [SerializeField]
         private bool lockCameraRotation = true;
 
@@ -36,8 +38,8 @@ namespace ECM.Examples
 
         public float followSpeed
         {
-            get { return _followSpeed; }
-            set { _followSpeed = Mathf.Max(0.0f, value); }
+            get { return currentFollowSpeed; }
+            set { currentFollowSpeed = Mathf.Max(0.0f, value); }
         }
 
         private Vector3 cameraRelativePosition
@@ -52,7 +54,7 @@ namespace ECM.Examples
         public void OnValidate()
         {
             distanceToTarget = _distanceToTarget;
-            followSpeed = _followSpeed;
+            followSpeed = currentFollowSpeed = _followSpeed;
         }
         Quaternion targetrot;
 
@@ -85,7 +87,7 @@ namespace ECM.Examples
             if (transform.rotation != targetrot)
                 followSpeed = 100;
             else
-                followSpeed = 3;
+                currentFollowSpeed = followSpeed;
 
             transform.rotation = Quaternion.Lerp(transform.rotation, targetrot, Time.deltaTime * 10);
             transform.position = Vector3.Lerp(transform.position, cameraRelativePosition, followSpeed * Time.deltaTime);

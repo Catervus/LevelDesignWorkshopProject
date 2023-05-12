@@ -4,7 +4,8 @@ using UnityEngine;
 
 public enum E_TriggerObjectType
 {
-    Coin = 0,
+    Misc = 0,
+    Coin,
     Goal,
     Obstacle,
     Checkpoint
