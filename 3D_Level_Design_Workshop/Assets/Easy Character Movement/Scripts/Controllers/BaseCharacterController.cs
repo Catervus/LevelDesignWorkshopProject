@@ -509,6 +509,14 @@ namespace ECM.Controllers
 
         #region METHODS
 
+
+        public void SetSpawnPos()
+        {
+            LevelManager.playerSpawnPos = transform.position;
+            LevelManager.checkPointHit = true;
+        }
+
+
         public void ToggleInputAllow(bool _allow)
         {
             allowInput = false;
@@ -921,6 +929,9 @@ namespace ECM.Controllers
             animator = GetComponentInChildren<Animator>();
 
             rootMotionController = GetComponentInChildren<RootMotionController>();
+
+            if(LevelManager.checkPointHit)
+                transform.position = LevelManager.playerSpawnPos; 
         }
 
         public virtual void FixedUpdate()

@@ -56,7 +56,7 @@ namespace ECM.Examples
         }
         Quaternion targetrot;
 
-        public void Awake()
+        public void Start()
         {
             transform.position = cameraRelativePosition;
             targetrot = transform.rotation;

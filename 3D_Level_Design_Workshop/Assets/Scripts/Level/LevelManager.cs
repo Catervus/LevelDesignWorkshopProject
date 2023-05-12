@@ -21,6 +21,9 @@ public class LevelManager : MonoBehaviour
     private static LevelManager instance;
     public static LevelManager Instance { get => instance; }
 
+    public static Vector3 playerSpawnPos;
+    public static bool checkPointHit;
+
 
     private void Awake()
     {

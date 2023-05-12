@@ -6,7 +6,8 @@ public enum E_TriggerObjectType
 {
     Coin = 0,
     Goal,
-    Obstacle
+    Obstacle,
+    Checkpoint
 }
 
 public class TriggerObject : MonoBehaviour
@@ -48,10 +49,7 @@ public class TriggerObject : MonoBehaviour
             return;
 
         if (this.enabled == false)
-        {
-            Debug.Log("Huhu!");
             return;
-        }
 
         triggerEvent.RaiseEvent();
         if (setInactiveWhenTrigger)
