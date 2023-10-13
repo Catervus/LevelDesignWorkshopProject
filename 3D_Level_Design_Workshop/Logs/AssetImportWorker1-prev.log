@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 8168 MB
+Built from '2021.3/staging' branch; Version is '2021.3.23f1 (213b516bf396) revision 2177873'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'de' Physical Memory: 32173 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Software\Unity\Versions\2020\2021.3.6f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/Projects/Unity Projects/2023/LevelDesignWorkshopProject/3D_Level_Design_Workshop
+C:/Projects/UnityProjects/LevelDesignWorkshopProject/3D_Level_Design_Workshop
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-56688
-Successfully changed project path to: D:/Projects/Unity Projects/2023/LevelDesignWorkshopProject/3D_Level_Design_Workshop
-D:/Projects/Unity Projects/2023/LevelDesignWorkshopProject/3D_Level_Design_Workshop
+56734
+Successfully changed project path to: C:/Projects/UnityProjects/LevelDesignWorkshopProject/3D_Level_Design_Workshop
+C:/Projects/UnityProjects/LevelDesignWorkshopProject/3D_Level_Design_Workshop
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,58 +47,211 @@ D:/Projects/Unity Projects/2023/LevelDesignWorkshopProject/3D_Level_Design_Works
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 139.62 ms, found 3 plugins.
+Player connection [25492] Host "[IP] 10.8.14.197 [Port] 0 [Flags] 2 [Guid] 1825549966 [EditorId] 1825549966 [Version] 1048832 [Id] WindowsEditor(7,BO-HIGP-LK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [25492] Host "[IP] 10.8.14.197 [Port] 0 [Flags] 2 [Guid] 1825549966 [EditorId] 1825549966 [Version] 1048832 [Id] WindowsEditor(7,BO-HIGP-LK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 97.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.6f1 (7da38d85baf6)
-[Subsystems] Discovering subsystems at path D:/Software/Unity/Versions/2020/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Projects/Unity Projects/2023/LevelDesignWorkshopProject/3D_Level_Design_Workshop/Assets
+Initialize engine version: 2021.3.23f1 (213b516bf396)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projects/UnityProjects/LevelDesignWorkshopProject/3D_Level_Design_Workshop/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
     Vendor:   NVIDIA
-    VRAM:     6052 MB
-    Driver:   31.0.15.1694
+    VRAM:     5968 MB
+    Driver:   31.0.15.2824
 Initialize mono
-Mono path[0] = 'D:/Software/Unity/Versions/2020/2021.3.6f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Software/Unity/Versions/2020/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Software/Unity/Versions/2020/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Software/Unity/Versions/2020/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005261 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006933 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 138.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 99.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.931 seconds
+- Completed reload, in  0.612 seconds
 Domain Reload Profiling:
-	ReloadAssembly (932ms)
-		BeginReloadAssembly (132ms)
+	ReloadAssembly (613ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (674ms)
-			LoadAssemblies (131ms)
+		EndReloadAssembly (444ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
+			SetupTypeCache (96ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (449ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (277ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (139ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (117ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012749 seconds.
+Registered in 0.006988 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projects\UnityProjects\LevelDesignWorkshopProject\3D_Level_Design_Workshop\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projects\UnityProjects\LevelDesignWorkshopProject\3D_Level_Design_Workshop\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 105.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.309 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1310ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1082ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (335ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (563ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (80ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4947 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.7 MB). Loaded Objects now: 5402.
+Memory consumption went from 201.2 MB to 200.5 MB.
+Total: 3.635500 ms (FindLiveObjects: 0.456200 ms CreateObjectMapping: 0.333200 ms MarkObjects: 2.479700 ms  DeleteObjects: 0.365100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 970503.590034 seconds.
+  path: Assets/Prefabs/Level/Environment/1x1 Grass Tile.prefab
+  artifactKey: Guid(c3254d6219ccc0a408bb50683ef7af34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Environment/1x1 Grass Tile.prefab using Guid(c3254d6219ccc0a408bb50683ef7af34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b400bf7c8456ddc728cb25f4e0793a') in 1.405664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Prefabs/Level/Obstacles/Short Spikeys.prefab
+  artifactKey: Guid(9f809cee5ffeea5459b8c5ff947e359b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Obstacles/Short Spikeys.prefab using Guid(9f809cee5ffeea5459b8c5ff947e359b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1125e7494f018ec61f9bc04e81345d41') in 0.024178 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Prefabs/Level/Obstacles/Gigaspikeyball.prefab
+  artifactKey: Guid(4f758d7815337f048bb7f650c6f5ad15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Obstacles/Gigaspikeyball.prefab using Guid(4f758d7815337f048bb7f650c6f5ad15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b2541daa760068d63989042723acf8') in 0.021284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Prefabs/Level/Coin.prefab
+  artifactKey: Guid(689f70c4e0f79e2469928941833bbfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Coin.prefab using Guid(689f70c4e0f79e2469928941833bbfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aadeeb73ae98c720be188d9125054af5') in 0.022242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Level/Environment/1x1 Dirt Tile.prefab
+  artifactKey: Guid(479c976353f3e77409ea37933650183a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Environment/1x1 Dirt Tile.prefab using Guid(479c976353f3e77409ea37933650183a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f3b952974df74a82ebc2ad52d617c8') in 0.018296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Level/Environment/Fence End.prefab
+  artifactKey: Guid(9c02ac91e933978418e74d57fd10aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Environment/Fence End.prefab using Guid(9c02ac91e933978418e74d57fd10aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53253ae17b32281c683e6832f4994d67') in 0.019291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Level/Environment/Fence Corner.prefab
+  artifactKey: Guid(01a461863d46254438cbea190136d16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Environment/Fence Corner.prefab using Guid(01a461863d46254438cbea190136d16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816db65f9d6a80dea144187b292a9d91') in 0.020785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Prefabs/Level/Obstacles/Long Spikeys.prefab
+  artifactKey: Guid(ca48b681996714d4f993d2c5bc4021ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Obstacles/Long Spikeys.prefab using Guid(ca48b681996714d4f993d2c5bc4021ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9192078a5ef971640377ed8fc475ed1') in 0.020224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Level/Obstacles/Cannonade.prefab
+  artifactKey: Guid(d8c1d1c9fff1dc644b47353c6d28544e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Obstacles/Cannonade.prefab using Guid(d8c1d1c9fff1dc644b47353c6d28544e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b01330e1fbdb57b9fccf84e04c4337') in 0.026937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Prefabs/Level/Environment/Bouncy.prefab
+  artifactKey: Guid(3c153c7f3b5748d43b55db51bacea6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Environment/Bouncy.prefab using Guid(3c153c7f3b5748d43b55db51bacea6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c5b768e7455b303ad691ae0e07adf2') in 0.027869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Prefabs/SceneObjects
+  artifactKey: Guid(7c94fb73f5551af428b8388e24a9bbcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SceneObjects using Guid(7c94fb73f5551af428b8388e24a9bbcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c96630293e977115713a14baa3fd2c5') in 0.008400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Prefabs/Level/LevelGoal.prefab
+  artifactKey: Guid(13604aaf1d74e1d43a0a31a4b0a531ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/LevelGoal.prefab using Guid(13604aaf1d74e1d43a0a31a4b0a531ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ef1d22425f6ff621eecfbf743b29aa') in 0.021281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Level/Environment/2x1 Grass Tile.prefab
+  artifactKey: Guid(55f56bc0fb32ecf42b666780edd7d72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Environment/2x1 Grass Tile.prefab using Guid(55f56bc0fb32ecf42b666780edd7d72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76eb7c7288bf71d597b5ba57ea58e61a') in 0.010877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/SceneObjects/PostProcess_Volume.prefab
+  artifactKey: Guid(a54a4f8442824914eb826b66e236a9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SceneObjects/PostProcess_Volume.prefab using Guid(a54a4f8442824914eb826b66e236a9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a4c64b6261aa26c234b104aef597db') in 0.013526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Prefabs/Level/Environment/Arrow Sign Sidewards.prefab
+  artifactKey: Guid(e97068554f426f74fbf4ce4c4c17ab4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Environment/Arrow Sign Sidewards.prefab using Guid(e97068554f426f74fbf4ce4c4c17ab4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a934dd5df4da2501a2ca562d111d07') in 0.016874 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

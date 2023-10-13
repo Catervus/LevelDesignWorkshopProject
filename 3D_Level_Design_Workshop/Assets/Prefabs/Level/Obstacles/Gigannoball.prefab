@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5282736411709479597}
-  - component: {fileID: 4395919925687990905}
   - component: {fileID: 7059083565863228791}
   - component: {fileID: 6594943519309500367}
   m_Layer: 0
@@ -35,23 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4395919925687990905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5282736411709479596}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd1ec19c8fd20c040b67b801ac60b7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerEvent: {fileID: 11400000, guid: 3f96b3f35a9380243a6bca9f80e8ec3b, type: 2}
-  setInactiveWhenTrigger: 1
-  triggerObjType: 2
-  playerCollisionLayer: {fileID: 11400000, guid: f2157478188239449a21b3647380f243,
-    type: 2}
 --- !u!54 &7059083565863228791
 Rigidbody:
   m_ObjectHideFlags: 0

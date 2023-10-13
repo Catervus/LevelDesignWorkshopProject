@@ -221,7 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerEvent: {fileID: 11400000, guid: 3f96b3f35a9380243a6bca9f80e8ec3b, type: 2}
   setInactiveWhenTrigger: 0
-  triggerObjType: 2
+  triggerObjType: 3
   playerCollisionLayer: {fileID: 11400000, guid: f2157478188239449a21b3647380f243,
     type: 2}
 --- !u!114 &5999926186319550190
