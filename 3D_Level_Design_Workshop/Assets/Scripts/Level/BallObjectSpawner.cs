@@ -42,6 +42,6 @@ public class BallObjectSpawner : MonoBehaviour
             Debug.LogWarning("Warning: Spawned object does not have the necessary Rigidbody.");
             return;
         }
-        rb.velocity = -transform.right * ballShootForce.RuntimeValue;
+        rb.linearVelocity = -transform.right * ballShootForce.RuntimeValue;
     }
 }
