@@ -86,6 +86,8 @@ namespace ECM.Controllers
                  "As rule of thumb, configure it to your character's gravity.")]
         [SerializeField]
         private float _extraJumpPower = 25.0f;
+        [SerializeField]
+        private float _midAirJumpMultiplier = 0.75f;
 
         [FormerlySerializedAs("_jumpToleranceTime")]
         [Tooltip("How early before hitting the ground you can press jump, and still perform the jump.\n" +
@@ -152,7 +154,6 @@ namespace ECM.Controllers
         /// <summary>
         /// Cached animator component (if any).
         /// </summary>
-
         public Animator animator { get; set; }
 
         /// <summary>
@@ -343,6 +344,12 @@ namespace ECM.Controllers
         {
             get { return _extraJumpPower; }
             set { _extraJumpPower = Mathf.Max(0.0f, value); }
+        }
+
+        public float midAirJumpMultiplier
+        {
+            get { return _midAirJumpMultiplier; }
+            set { _midAirJumpMultiplier = Mathf.Max(0.0f, value); }
         }
 
         /// <summary>
@@ -677,7 +684,7 @@ namespace ECM.Controllers
 
             // Apply jump impulse
 
-            movement.ApplyVerticalImpulse(jumpImpulse);
+            movement.ApplyVerticalImpulse(jumpImpulse * midAirJumpMultiplier);
 
             // 'Pause' grounding, allowing character to safely leave the 'ground'
 
@@ -833,7 +840,12 @@ namespace ECM.Controllers
         /// Perform character animation.
         /// </summary>
 
-        protected virtual void Animate() { }
+        protected virtual void Animate() 
+        {
+            float spd = new Vector2(movement.cachedRigidbody.linearVelocity.x, movement.cachedRigidbody.linearVelocity.z).magnitude;
+            animator.SetFloat("Speed", spd);
+            animator.SetBool("isGrounded", movement.isGrounded);
+        }
 
         /// <summary>
         /// Update character's rotation.
@@ -879,7 +891,7 @@ namespace ECM.Controllers
             };
 
             float angle = Camera.main.transform.rotation.eulerAngles.y;
-            Debug.Log(angle);
+            // Debug.Log(angle);
             moveDirection = Quaternion.AngleAxis(angle, Vector3.up) * moveDirection;
 
             jump = Input.GetButton("Jump");
@@ -982,7 +994,6 @@ namespace ECM.Controllers
             UpdateRotation();
 
             // Perform character animation (if not paused)
-
             Animate();
         }
         
